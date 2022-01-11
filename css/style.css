@@ -27,7 +27,7 @@ body {
   margin-right: 40px;
 }
 .youtube:hover{
-  animation: myAnimation 4s  ease  2;
+  animation: myAnimation 2s  ease  1;
 }
 .twitter{
   transform:  rotateX(0deg) rotateY(0deg) rotateZ(0deg);
@@ -41,7 +41,7 @@ body {
   margin-right: 40px;
 }
 .twitter:hover{
-  animation: myAnimation 4s ease  2;
+  animation: myAnimation 2s ease  1;
 }
 .facebook{
   transform:  rotateX(0deg) rotateY(0deg) rotateZ(0deg);
@@ -55,15 +55,30 @@ body {
   margin-right: 40px;
 }
 .facebook:hover{
-  animation: myAnimation 4s ease  2;
+  animation: myAnimation 2s ease  1;
 }
 @keyframes myAnimationreserve{
-  from { transform: rotate3d(0, 0, 0, 0); }
-  to { transform: rotate3d(1, 1, 0, 360deg); }
+  0% {
+   
+    transform:rotateX(0deg) rotateY(-180deg) rotateZ(-360deg);
+}
+50% {
+    transform: rotateX(-180px) rotateY(360px) rotateZ(720px);
+}
+100% {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
 }
 @keyframes myAnimation{
-  from { transform: rotate3d(1, 1, 0, 360deg) ; }
-  to { transform:rotate3d(0, 0, 0, 0) ; }
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+50% {
+    transform: rotateX(-180px) rotateY(360px) rotateZ(720px);
+}
+100% {
+     transform:rotateX(0deg) rotateY(-180deg) rotateZ(-360deg);
+}
 }
 .box{
   width: 300px;
@@ -106,12 +121,12 @@ body {
   font-size: 60px;
   color: #616161;
 }
-.youtube .right{
+.youtube .back{
   background-color: rgb(243, 66, 66);
 }
-.twitter .right{
+.twitter .back{
   background-color: rgb(77, 201, 250);
 }
-.facebook .right{
+.facebook .back{
   background-color: rgb(52, 97, 243);
 }
