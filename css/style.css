@@ -118,15 +118,27 @@ body {
   transform: translate3d(0px, 150px, 0px) rotateX(-90deg);
 }
 .bx{
-  font-size: 60px;
+  font-size: 80px;
   color: #616161;
 }
 .youtube .back{
   background-color: rgb(243, 66, 66);
 }
+.youtube .back .bx{ 
+  background-color: rgb(243, 66, 66);
+  color: #fff;
+}
 .twitter .back{
   background-color: rgb(77, 201, 250);
 }
+.twitter .back .bx{ 
+  background-color: rgb(77, 201, 250);
+  color: #fff;
+}
 .facebook .back{
   background-color: rgb(52, 97, 243);
+}
+.facebook .back .bx{ 
+  background-color: rgb(52, 97, 243);
+  color: #fff;
 }
