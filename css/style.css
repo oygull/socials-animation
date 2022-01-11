@@ -24,6 +24,7 @@ body {
   transition: all 2s ease;
   animation-name: myAnimationreserve;
   animation-duration: 2s;
+  margin-right: 40px;
 }
 .youtube:hover{
   animation: myAnimation 4s  ease  2;
@@ -37,6 +38,7 @@ body {
   transition: all 2s ease;
   animation-name: myAnimationreserve;
   animation-duration: 2s;
+  margin-right: 40px;
 }
 .twitter:hover{
   animation: myAnimation 4s ease  2;
@@ -50,6 +52,7 @@ body {
   transition: all 2s ease;
   animation-name: myAnimationreserve;
   animation-duration: 2s;
+  margin-right: 40px;
 }
 .facebook:hover{
   animation: myAnimation 4s ease  2;
@@ -63,40 +66,41 @@ body {
   to { transform:rotate3d(0, 0, 0, 0) ; }
 }
 .box{
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   background-color: #e5e5e5;
   border: 1px solid #c4c4c4;
   text-align: center;
-  line-height: 200px;
+  line-height: 300px;
   font-size: 30px;
   text-transform: capitalize;
   position: absolute;
   top: 0;
   left: 0;
+  margin-right: 40px;
 }
 .front {
-  transform: translate3d(0, 0, 100px);
+  transform: translate3d(0, 0, 150px);
 }
 .back {
-  transform: translate3d(0, 0, -100px) rotateY(180deg);
+  transform: translate3d(0, 0, -150px) rotateY(180deg);
 }
 
 .left {
-  transform: translate3d(-100px, 0, 0px) rotateY(-90deg);
+  transform: translate3d(-150px, 0, 0px) rotateY(-90deg);
 }
 
 .right {
-  transform: translate3d(100px, 0, 0px) rotateY(90deg);
+  transform: translate3d(150px, 0, 0px) rotateY(90deg);
   
 }
 
 .top {
-  transform: translate3d(0px, -100px, 0px) rotateX(-90deg);
+  transform: translate3d(0px, -150px, 0px) rotateX(-90deg);
 }
 
 .bottom {
-  transform: translate3d(0px, 100px, 0px) rotateX(-90deg);
+  transform: translate3d(0px, 150px, 0px) rotateX(-90deg);
 }
 .bx{
   font-size: 60px;
